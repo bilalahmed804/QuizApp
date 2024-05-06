@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: black;
+}
+.containor{
+    display: flex;
+    justify-content: center;
+
+}
+.main{
+    text-align: left;
+    width: 30%;
+    margin-left: 20px;
+    background-color: rgb(44, 43, 43);
+    margin-top: 10%;
+    color:white;
+}
+.block{
+    position: relative;
+    margin:10% auto 0 ;
+    width: 40%;
+    height: 400%;
+    background: linear-gradient(0deg,black ,rgb(44, 44, 44));
+
+}
+.main::before, .main::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,#e6fb04, #ff6600,#00ff66,#00ffff,
+    #ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}
+.main::after{
+    filter: blur(30px);
+}
+#timer{
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+#ques{
+    padding: 20px;
+    border-radius: 20px;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 17px;
+}
+.head{
+    margin-left: 20px;
+}
+.btn{
+    text-align: center;
+    display: flex;
+}
+button{
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 21px;
+    background-color: blue;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
