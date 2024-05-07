@@ -1,10 +1,10 @@
 var question = [
   {
   question: `Q : Inside which HTML element do we put the javaScript?`,
-  option1: `<script>`,
-  option2: `<scripting>`,
-  option3: `<javascript>`,
-  corrAnswer:`<script>`,
+  option1: `< script >`,
+  option2: `< scripting >`,
+  option3: `< javascript >`,
+  corrAnswer:`< script >`,
   },
   {
   question: `Q : What is the correct JavaScript syntax to change the content of the HTML element below? "\n"<p id="demo">This is a demonstration.</p>`,
